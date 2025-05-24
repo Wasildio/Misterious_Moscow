@@ -1,0 +1,95 @@
+/* ===== Базовые стили ===== */
+html, body, #map {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+#map {
+  width: 100%;
+}
+
+/* ===== Типографика для pointX.html ===== */
+body {
+  background: #f5f5f5;       /* серо-белый фон страницы */
+  color: #333333;            /* тёмно-серый текст */
+  font-family: Georgia, 'Times New Roman', serif;
+}
+
+#point-title {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  margin: 1.5em 0 0.5em;
+}
+
+/* ===== Аудиоплеер ===== */
+.audio-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2em;
+}
+
+/* ===== Карусель (Swiper) ===== */
+.swiper-container {
+  position: relative;
+  width: 80%;
+  max-width: 700px;
+  height: 400px;
+  margin: 0 auto 2em;
+  overflow: hidden;
+  background: #ffffff;       /* белый фон панели */
+  border: 1px solid #dddddd; /* светло-серый бордер */
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.swiper-wrapper {
+  /* стандартное позиционирование */
+}
+
+.swiper-slide img {
+  display: block;
+  max-height: 100%;
+  width: auto;
+  margin: auto;
+}
+
+/* ===== Стрелки навигации ===== */
+.swiper-button-prev,
+.swiper-button-next {
+  color: #3b2e2a;            /* коричневые стрелки */
+  width: 2em;
+  height: 2em;
+  top: calc(50% - 1em);
+}
+
+.swiper-button-prev {
+  left: 0.5em;
+}
+
+.swiper-button-next {
+  right: 0.5em;
+}
+
+/* ===== Точки-пагинация ===== */
+.swiper-pagination {
+  bottom: 0.5em !important;
+}
+
+/* ===== Текст ===== */
+#point-text {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto 3em;
+  padding: 0 1em;
+  color: #333333;
+}
+
+/* ===== Ссылка «Назад» ===== */
+body > p:first-of-type a {
+  display: inline-block;
+  margin: 1em;
+  color: #0066cc;
+  text-decoration: none;
+}

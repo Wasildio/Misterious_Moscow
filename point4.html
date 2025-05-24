@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Загрузка…</title>
+
+  <!-- Основные стили -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="assets/lib/swiper-bundle.min.css" />
+</head>
+<body>
+
+  <!-- Назад на карту -->
+  <p><a href="index.html">← Назад к карте</a></p>
+
+  <!-- Заголовок (центрован) -->
+  <h1 id="point-title">Загрузка…</h1>
+
+  <!-- Аудиоплеер (центр) -->
+  <div class="audio-container">
+    <audio id="audio-player" controls></audio>
+  </div>
+
+  <!-- Карусель -->
+  <div class="swiper-container">
+    <div class="swiper-wrapper" id="photo-carousel"></div>
+    <!-- навигация -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+    <!-- индикаторы -->
+    <div class="swiper-pagination"></div>
+  </div>
+
+  <!-- Текст из Markdown (выравнен по центру, крупный шрифт) -->
+  <section id="point-text">Загрузка…</section>
+
+  <!-- Скрипты -->
+  <script src="assets/lib/marked.min.js"></script>
+  <script src="assets/lib/swiper-bundle.min.js"></script>
+  <script>const POINT_ID = 'point4'; /* меняется для каждой страницы */</script>
+  <script src="assets/js/point.js"></script>
+</body>
+</html>
